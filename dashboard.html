@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dashboard-body" id="dashboard-body">
+        <nav class="nav-style">
+            <div class="buttons-div" id="buttons-div">
+                <button>Suas Contas</button>
+                <button>Contas à receber</button>
+                <button>Contas à pagar</button>
+            </div>
+            <button id="exit-button">Sair</button>
+            <div class="login-Register" id="login-Register">
+                <a href="./login.html"><button>Login</button></a>
+                <a href="./register.html"><button>Register</button></a>
+            </div>
+        </nav>
+        <div class="data-visualization-style" id="data-visualization">
+            <div class="user-accounts">
+                <div class="user-accounts-nav">
+                    <p>Você tem 0 contas criadas</p>
+                    <nav>
+                        <button id="create-account-btn">Criar conta</button>
+                    </nav>
+                </div>
+                <div class="accounts">
+                    <table>
+                        <!-- <tr>
+                            <th>Nome</th>
+                            <th>Saldo</th>
+                            <th>Limite disponível</th>
+                            <th>Lançamentos</th>
+                        </tr>
+                        <tr>
+                            <td>Keanu</td>
+                            <td>1.566,00</td>
+                            <td>2.500,00</td>
+                            <td><button>Acessar</button></td>
+                        </tr> -->
+                    </table>
+                </div>
+            </div>
+            <div class="accounts-receivable"></div>
+            <div class="accounts-payable"></div>
+        </div>
+        <div class="add-account-container" id="modal-container">;
+            <div class="add-account-modal">
+                <label>Banco
+                    <input type="text" id="bank-name">
+                </label>
+                <label>Saldo
+                    <input type="number" id="balance">
+                </label>
+                <label>Limite
+                    <input type="number" id="limit">
+                </label>
+                <label>Vencimento da fatura
+                    <input type="date" id="due-date">
+                </label>
+                <button class="save-acc-btn" id="save-acc">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/dashboard.js"></script>
+</body>
+
+</html>
