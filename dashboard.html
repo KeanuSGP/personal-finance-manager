@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
     <title>Document</title>
 </head>
 
@@ -25,33 +25,25 @@
         <div class="data-visualization-style" id="data-visualization">
             <div class="user-accounts">
                 <div class="user-accounts-nav">
-                    <p>Você tem 0 contas criadas</p>
+                    <p id="accounts-count"></p>
                     <nav>
                         <button id="create-account-btn">Criar conta</button>
                     </nav>
                 </div>
                 <div class="accounts">
-                    <table>
-                        <!-- <tr>
-                            <th>Nome</th>
-                            <th>Saldo</th>
-                            <th>Limite disponível</th>
-                            <th>Lançamentos</th>
-                        </tr>
-                        <tr>
-                            <td>Keanu</td>
-                            <td>1.566,00</td>
-                            <td>2.500,00</td>
-                            <td><button>Acessar</button></td>
-                        </tr> -->
+                    <table id="accounts-visualization">
                     </table>
+                    <div class="account-nav-buttons" id="acc-nav-btn">
+                        <button id="edit-acc">Edit</button>
+                        <button>Delete</button>
+                    </div>
                 </div>
             </div>
             <div class="accounts-receivable"></div>
             <div class="accounts-payable"></div>
         </div>
-        <div class="add-account-container" id="modal-container">;
-            <div class="add-account-modal">
+        <div class="modal-container-style" id="modal-container">;
+            <div class="modal-style" id="add-account-modal">
                 <label>Banco
                     <input type="text" id="bank-name">
                 </label>
@@ -67,6 +59,7 @@
                 <button class="save-acc-btn" id="save-acc">Salvar</button>
             </div>
         </div>
+
     </div>
     <script src="./scripts/dashboard.js"></script>
 </body>
