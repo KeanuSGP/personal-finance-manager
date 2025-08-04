@@ -11,10 +11,6 @@
     align-items: center;
 }
 
-.nav-style {
-    padding: 5px;
-}
-
 .login-Register {
     display: none;
 }
@@ -22,8 +18,9 @@
 .nav-style {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
-    width: 100%;
+    justify-content: space-between; 
+    width: 90%;
+    padding: 10px 0;
 }
 
 .data-visualization-style {
@@ -34,7 +31,8 @@
 
 .user-accounts-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
 .user-accounts {
@@ -42,15 +40,18 @@
 
 }
 
+.accounts {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 table {
     /* background-color: red; */
     width: 100%;
     text-align: center;
     /* border: 1px solid black; */
-}
-
- tr, th, td {
-    border: 1px solid black;
 }
 
 .modal-container-style {
@@ -105,11 +106,22 @@ table {
 }
 
 .row-styles:hover {
-    /* background-color: rgb(202, 202, 202); */
+    background-color: rgb(201, 201, 201);
+}
+.selected {
+    background-color: rgb(79, 91, 255) !important;
+    color: white;
 }
 
-.selected {
-    background-color: rgb(0, 17, 255);
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+th {
+    background-color: black;
+    color: white;
 }
 
 .account-nav-buttons {
@@ -118,4 +130,9 @@ table {
     text-align: right;
     padding: 0 10px 0 0;
     display: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0 10px;
 }
